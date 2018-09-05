@@ -1,0 +1,42 @@
+span.htmlcolor  {
+    color: red;
+}
+.FirstPar  {
+    font: normal 14px fantasy;
+    color: red;
+}
+.SecondPar  {
+    font: normal 18px sans-serif;
+    color: green;
+}
+.ThirdPar  {
+    font: normal 16px serif;
+    color: blue;
+}
+span.nameitalic {
+    font-style: italic;
+}
+span.wordshadow {
+    text-shadow: 1px 1px;
+}
+span.wordbold   {
+    font-weight: bold;
+}
+ul>li   {
+    list-style: none;
+}
+ul.FirstListItems>li:before {
+    content: ". \00a0";
+}
+ul.SecondListItems>li:before {
+    content: "§ \00a0";
+}
+ul.ThirdListItems>li:before  {
+    content: "o \00a0";
+}
+.image   {
+    text-align: center;
+}
+a   {
+    text-decoration: none;
+}
