@@ -1,0 +1,48 @@
+html, body  {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 153, 153, 0.5);
+}
+#header:hover   {
+    background-color: rgba(204, 255, 255, 0.5);
+}
+#header img {
+    height: 80%;
+    margin-top: 5px;
+}
+#header img.img1    {
+    float: left;
+}
+#header img.img2    {
+    float: right;
+}
+#content    {
+    width: 70%;
+    margin: 0px 15% 50px 15%;
+    height: 350px;
+    position: absolute;
+    bottom: 50px;
+    background-color: blanchedalmond;
+    border-left: 2px red solid;
+    border-right: 2px green solid;
+    column-count: 2;
+}
+#footer {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(153, 255, 102, 0.5);
+    bottom: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+#footer:hover {
+    background-color: rgb(153, 255, 102);
+}

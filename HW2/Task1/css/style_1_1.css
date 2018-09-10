@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0
+}
+#t1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+td  {
+    border: 1px #ffffff solid;
+    border-width: 5px;
+}
+#t1 tr:nth-child(1) {
+    background-color: lightpink;
+}
+#t1 tr:nth-child(1) td {
+    height: 50px;
+}
+#t1 tr:nth-child(2) {
+    background-color: deepskyblue;
+}
+#t1 tr:nth-child(2) td {
+    height: 200px;
+}
+#t1 tr:nth-child(3) {
+    background-color: greenyellow;
+}
+#t1 tr:nth-child(3) td {
+    height: 150px;
+}
+#t1 tr:nth-child(3) td{
+    width: 30%;
+}
+#t1 tr:nth-child(4) {
+    background-color: lightyellow;
+}
+#t1 tr:nth-child(4) td {
+    height: 100px;
+}

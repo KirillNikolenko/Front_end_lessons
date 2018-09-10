@@ -1,0 +1,65 @@
+body    {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    padding:0;
+}
+div.box1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 6px;
+    padding: 0;
+}
+div.box2 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 10px 6px;
+    padding: 0;
+}
+div.box3 {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 7px;
+    padding: 0;
+}
+div.box4 {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 7px;
+    padding: 0;
+}
+div.row1  {
+    float: left;
+    width: 49%;
+    background-color: lightpink;
+    height: inherit;
+    margin-right: 10px;
+}
+div.row2  {
+    float: left;
+    width: 99%;
+    background-color: deepskyblue;
+    height: inherit;
+}
+div.row3  {
+    display: inline-block;
+    width: 31%;
+    background-color: greenyellow;
+    height: inherit;
+    margin-right: 14px;
+}
+div.row4  {
+    display: inline-block;
+    width: 23%;
+    background-color: lightyellow;
+    height: inherit;
+    margin-right: 10px;
+}
