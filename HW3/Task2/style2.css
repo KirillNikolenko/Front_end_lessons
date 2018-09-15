@@ -65,7 +65,7 @@ span    {
     color: white;
 }
 /*iPad*/
-@media only screen and (min-width: 768px) and (max-width: 1024px)   {
+@media only screen and (min-width: 668px) and (max-width: 1024px)   {
     #brown_block    {
         display: none;
     }
@@ -104,7 +104,7 @@ span    {
     }   
 }
 /*iPhone6*/
-@media only screen and (min-width: 375px) and (max-width: 667px)   {
+@media only screen and (max-width: 667px)   {
     #brown_block    {
         display: none;
     }
