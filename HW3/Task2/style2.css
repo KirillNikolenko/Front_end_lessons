@@ -1,0 +1,137 @@
+html, body  {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+#red_block  {
+    background-color: red;
+    width: 36%;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    line-height: 100px;
+}
+#orange_block   {
+    background-color: orange;
+    width: 60%;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    line-height: 100px;
+}
+#green_block    {
+    background-color: green;
+    width: 97.5%;
+    height: 300px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    line-height: 300px;
+}
+#brown_block    {
+    background-color: burlywood;
+    width: 31.5%;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    line-height: 150px;
+}
+#blue_block    {
+    background-color: blue;
+    width: 31.5%;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    line-height: 150px;
+}
+#purple_block    {
+    background-color: purple;
+    width: 31.5%;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    line-height: 150px;
+}
+span    {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: white;
+}
+/*iPad*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)   {
+    #brown_block    {
+        display: none;
+    }
+    #orange_block   {
+        position: absolute;
+        width: 36%;      
+    }
+    #purple_block   {
+        position: absolute; 
+        width: 60%;
+        height: 100px;
+        left: 38%;
+        line-height: 100px;
+    }
+    #red_block  {
+        position: absolute;
+        width: 98%;
+        height: 300px;
+        top: 19%;
+        line-height: 300px;
+    }
+    #green_block    {
+        position: absolute;
+        width: 47%;
+        height: 150px;
+        top: 71%;
+        line-height: 150px;
+    }
+    #blue_block {
+        position: absolute;
+        width: 47%;
+        height: 150px;
+        top: 71%;
+        left: 51%;
+        line-height: 150px;
+    }   
+}
+/*iPhone6*/
+@media only screen and (min-width: 375px) and (max-width: 667px)   {
+    #brown_block    {
+        display: none;
+    }
+    #blue_block    {
+        display: none;
+    }
+    #orange_block    {
+        display: none;
+    }
+    #green_block    {
+        position: absolute;
+        width: 96%;
+        height: 150px;
+        line-height: 150px;
+    }
+    #purple_block   {
+        position: absolute; 
+        width: 96%;
+        height: 100px;
+        top: 27%;
+        line-height: 100px;
+    }
+    #red_block  {
+        position: absolute;
+        width: 96%;
+        height: 300px;
+        top: 45%;
+        line-height: 300px;
+    }
+}
