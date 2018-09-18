@@ -1,0 +1,19 @@
+#header    {
+    height: 15%;
+}
+#header h2  {
+    font-size: 16pt;
+}
+#content    {
+    height: 65%;
+    width: 100%;
+}
+#content h1 {
+    font-size: 24pt;
+}
+#footer {
+    height: 15%;
+}
+.footer_text   {
+    font-size: 14pt;
+}
