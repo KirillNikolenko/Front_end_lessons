@@ -1,0 +1,19 @@
+.container  {
+    display: flex;
+    background-color: darkblue;
+    width: 30%;
+    height: 300px;
+    align-items: stretch;
+}
+#box1    {
+    display: flex;
+    background-color: yellow;
+    flex-grow: 1;
+    margin: 40px;
+    align-items: stretch;
+}
+#box2   {
+    background-color: red;
+    flex-grow: 1;
+    margin: 40px;
+}
