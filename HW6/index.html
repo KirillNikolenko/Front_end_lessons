@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CSS-Animation</title>
+</head>
+<body>
+    <div id="container">
+        <div id="img_wrap">
+            <img src="./img/tower.jpg" alt="" class="main_img">
+        </div>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Details</a></li>
+            <li><a href="">Photo</a></li>
+            <li><a href="">About us</a></li>
+        </ul>
+        <form>
+            <input type="button" class="fix_button" value="FIX" />
+        </form>
+    </div>
+	<div id="form_background">
+        <div class="form_container">
+            <form id="cForm" name="contact_form">
+                <h1>Contact Form</h1>
+                <input type="text" name="name_field" placeholder="10 Symbols Max" pattern="[0-9a-zA-Z]{1,10}" oninput="CheckValid();"/>
+                <input type="text" name="email_field" placeholder="Only Letters" pattern="[a-zA-Z]{1,}" oninput="CheckValid();"/>
+                <input type="text" name="phone_field" placeholder="Only Digits" pattern="[0-9]{1,}" oninput="CheckValid();"/>
+                <textarea rows="7" type="text" name="text_field" placeholder="Your message"></textarea>
+                <input type="submit" value="Send" class="submit_button" />
+            </form>
+        </div>       
+    </div>
+    <script src="./js/actions.js"></script>
+</body>
+</html>
