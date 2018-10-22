@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Computers</title>
+</head>
+<body>
+    <div id="pageWrap">
+    <h1>Computers</h1>
+    <a href="constructor.html" class="createNewBtn">Create New Device</a>
+    <table id="computers" border="1">
+        <tbody id="tComputers">
+            <tr>
+                <td>Producer</td>
+                <td>CPU Type</td>
+                <td>Cores Amount</td>
+                <td>Frequency</td>
+                <td>RAM</td>
+                <td>HDD</td>
+                <td>MicroSD</td>
+                <td colspan="2"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="deviceInfo" border="1">
+        <tbody id="tDeviceInfo">
+
+        </tbody>
+    </table>
+    </div>
+    <div id="removeModal">
+        <div id="removeContent">
+            <h3>Do you really want to delete this device?</h3>
+            <a href="#" id="yesRemBtn" class="createNewBtn" onclick="yesRemBtnClick()">Yes</a>
+            <a href="#" id="noRemBtn" class="createNewBtn" onclick="noRemBtnClick()">No</a>
+        </div>   
+    </div>
+    <script src="./js/classes.js"></script>
+</body>
+</html>

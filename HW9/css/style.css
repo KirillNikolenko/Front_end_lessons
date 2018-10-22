@@ -1,0 +1,89 @@
+#computers {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+#computers td {
+    padding: 10px;
+}
+#computers tr:first-child {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#computers a {
+    text-decoration: underline;
+}
+#computers a:hover {
+    text-decoration: none;
+}
+.createNewBtn, .saveNewBtn {
+    background-color: #699DB6;
+	border-color: rgba(0,0,0,0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    color: #FFF;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+.createNewBtn:hover, .saveNewBtn:hover {
+    background-color: #4F87A2;
+	border-color: rgba(0,0,0,0.5);
+}
+.createNewBtn:active, .saveNewBtn:active {
+    background-color: rgb(54, 101, 124);
+	border-color: rgba(0,0,0,0.9);
+}
+#form_row {
+    padding: 20px;
+}
+#newCompForm {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+#newCompForm input[type="text"], select {
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
+}
+#newCompForm select {
+    width: 83.6%;
+}
+#newCompForm p {
+    text-align: left;
+    margin-left: 9%;
+}
+.saveNewBtn {
+    margin-top: 30px;
+    width: 40%;
+}
+#deviceInfo {
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+#deviceInfo td {
+    padding: 10px;
+}
+#removeModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 40%;
+    top: 0;
+    width: 25%;
+    height: 100px; 
+    background-color: white;
+    border: 1px solid black;
+}
+#removeContent {
+    text-align: center;
+}
