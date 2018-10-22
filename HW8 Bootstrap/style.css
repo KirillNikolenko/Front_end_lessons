@@ -1,0 +1,264 @@
+body {
+    background-image: url('./img/dark.jpg');
+ }
+.container-fluid {
+    padding: 0;
+    width: 85%;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+}
+.navbar {
+    background-color: rgb(229, 96, 39);
+}
+.navbar-brand img {
+     width: 40px;
+}
+.navbar-brand span {
+    font-style: italic;
+    color: black;
+}
+.nav-link   {
+    color: black;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-right: 1px solid white;
+}
+.nav-link:hover {
+    background-color: white;
+    color: black;
+}
+.navbar-toggler {
+    background-color: white;
+}
+.navbar-toggler-icon {
+    background-image: url('./img/tog.png');
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid white;
+}
+.btn {
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(229, 96, 39);
+    color: black;
+}
+.btn:hover {
+    background-color: white;
+    border: 1px solid rgb(229, 96, 39);
+    color: black;
+    box-shadow: none;
+}
+.btn:active {
+    background-color: rgb(229, 96, 39);
+    border: 1px solid white;
+    color: white;
+    box-shadow: none;
+}
+#demo {
+    background: black;
+}
+.carousel-item img {
+    width: 100%;
+    opacity: 0.3;
+}
+.carousel-caption h3 {
+    font-size: 110px;
+	font-family: "Gondola", sans-serif;
+	font-weight: lighter;
+}
+.carousel-caption h4 {
+    font-size: 30px;
+	font-family: "Gondola", sans-serif;
+	font-weight: lighter;
+    margin-bottom: 15%;
+}
+#main_logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main_logo span {
+    font-family: English;
+    font-size: 32px;
+    font-style: italic;
+    color: white;
+    margin: 5px;
+}
+#welcome_row {
+    text-align: center;
+    padding: 40px 0 0 20px;
+}
+#welcome_row h1, #cards_row h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+	font-family: "Gondola", sans-serif;
+	font-weight: lighter;
+}
+#welcome_content {
+    padding: 20px;
+}
+#welcome_content img {
+    width: 100%;
+}
+#tours {
+    padding: 0px 20px;
+}
+#tours h2 {
+    font-family: Taviraj, Times, serif;
+    font-weight: 600;
+}
+#tours a { 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.all_countries_btn {
+    font-family: Taviraj, Times, serif;
+    font-weight: 600;
+    color: darkblue;
+}
+.all_countries_btn:hover {
+    color: darkslateblue;
+}
+#tours img {
+    width: 100%;
+    height: 100%;
+}
+.tour_box {
+    text-align: center;
+}
+.tour_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tour_info h3 {
+    font-family: "Gondola", sans-serif;
+	color: white;
+	font-size: 38px;
+}
+.tour_info h4 {
+    font-family: "Gondola", sans-serif;
+	color: white;
+	font-size: 15px;
+}
+.tour_info h5 {
+    font-family: "Gondola", sans-serif;
+	color: white;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.more_info_btn {
+    text-decoration: none;
+    color: white;
+    background-color: #EFBC39;
+    padding: 10px;
+    box-shadow: 2px 3px 0px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 3px 0px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 3px 0px 0px rgba(0,0,0,0.5);
+}
+.more_info_btn:hover {
+    background-color: rgb(229, 96, 39);
+    color: white;
+}
+#collapse1 p, #collapse2 p, #collapse3 p {
+    color: white;
+    margin-top: 10px;
+}
+#cards_row {
+    text-align: center;
+    padding: 40px 0 20px 0px;
+}
+#cards img {
+    width: 60%;
+}
+.card {
+    width: 20%; margin: 0px 20px; margin: 0 auto; border: none;
+}
+#reviews_row {
+    margin-top: 60px;
+    padding: 40px 0px;
+    background-color: rgb(72,72,84);
+    color: rgb(178,194,204);
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    -moz-box-shadow: 0 0 5px black;
+    -webkit-box-shadow: 0 0 5px black;
+}
+#reviews_row img {
+    width: 20%;
+}
+#form_row {
+    background-color: rgb(229, 128, 39);
+    margin: 50px 0px 0px 0px;
+    padding: 20px;
+    box-shadow: 0 0 5px black;
+    -moz-box-shadow: 0 0 5px black;
+    -webkit-box-shadow: 0 0 5px black;
+}
+#feedback_form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+#feedback_form input:focus, #feedback_form textarea:focus, #feedback_form select:focus {
+    border: 1px solid black;
+}
+#feedback_form select:focus {
+    box-shadow: none;
+}
+.btn_submit {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(229, 128, 39);
+    padding: 10px 50px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+    border: none;
+}
+.btn_submit:hover {
+    cursor: pointer;
+}
+.btn_submit:active {
+    box-shadow: none;
+    border: none;
+    transform: translate(2px, 2px);
+}
+#footer {
+    padding: 30px 20px;
+    background-color: rgb(72,72,84);
+    color: white;
+}
+#footer a {
+    color: white;
+    text-decoration: underline;
+}
+#footer a:hover {
+    text-decoration: none;
+}
+@media only screen and (max-width: 667px) {
+    .carousel-caption h3 {
+        font-size: 40px;
+    }
+    .tour_info h3 {
+        font-family: "Gondola", sans-serif;
+        color: white;
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+    .carousel-caption h3 {
+        font-size: 60px;
+    }
+    .tour_info h3 {
+        font-family: "Gondola", sans-serif;
+        color: white;
+        font-size: 30px;
+    }
+}
