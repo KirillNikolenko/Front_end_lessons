@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Часы со скидкой</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="top-menu">
+                <ul class="top-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pay.html">Условия оплаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html">Условия доставки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="warranty.html">Гарантия на товар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qa.html">Вопрос-ответ</a>
+                    </li>
+                </ul>
+                <ul class="top-nav-login">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#show-auth">Вход</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="nav-row" class="row align-items-center">
+            <div class="col-md-4">
+                <a href="index.html"><img class="logo-img" src="logo.png" alt=""></a>
+            </div>
+            <div class="col-md-2">
+                    <span>МТС, Velcom, :)Life</span>
+                    <a href="#" id="phonepover" data-popover-content="#phone-popover"><div class="main-phone-num">623-45-67<img src="./img/filter_arrows.png" class="arrow-img" alt=""></div></a>
+                    <div class="hidden" id="phone-popover">
+                        <div class="popover-body">
+                            <table class="popover-table">
+                                <tr>
+                                    <td id="callback-box">
+                                    <div class="popover-head">Перезвоните мне</div>
+                                    <div id="callBack-container">
+                                        <span><img src="./img/mts.png" alt="">+375 29 623-45-67</span>
+                                        <span><img src="./img/velcom.png" alt="">+375 33 623-45-67</span>
+                                        <span><img src="./img/life.png" alt="">+375 25 623-45-67</span>
+                                        <p>Телефон</p>
+                                        <input type="text" id="callBack-form-number" class="form-control mb-4">
+                                        <p>Имя</p>
+                                        <input type="text" id="callBack-form-name" class="form-control mb-4">
+                                        <button type="submit" class="btn btn-info">Отправить заявку</button>
+                                    </div>
+                                    </td>
+                                    <td id="question-box">
+                                    <div class="popover-head">Задать вопрос</div>
+                                    <div id="question-container">
+                                        <p>Вопрос</p>
+                                        <textarea class="form-control rounded-0" id="question-form-area" rows="2"></textarea>
+                                        <P>Имя</P>
+                                        <input type="text" id="question-form-name" class="form-control mb-4">
+                                        <P>Электронная почта</P>
+                                        <input type="email" id="question-form-email" class="form-control mb-4">
+                                        <button type="submit" class="btn btn-info">Отправить вопрос</button>
+                                    </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            <div class="input-group col-md-4">
+                <input class="form-control search-field" type="search" placeholder="Поиск по сайту">
+                <div class="input-group-append">
+                    <button class="btn search-btn" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2 cart-block">
+                <a href="favorite.html" title="Список избранных товаров"><i class="far fa-heart fa-lg"></i></a>
+                <div class="count-top-num fav-count">3</div>
+                <a href="cart.html" title="Список товаров в корзине"><i class="fas fa-shopping-cart fa-lg"></i></a>
+                <div class="count-top-num cart-count">2</div>
+            </div>
+        </div>
+        <br>
+        <div id="main-nav-mob">
+            <ul class="menu-adaptive">
+                <li class="menu-opener">
+                    <a>Меню</a>
+                    <i class="icon"></i>
+                </li>
+            </ul>
+            <ul class="menu full hidden">
+                <li class="mob_menu_item"><a href="catalogue.html"><span>Каталог</span></a></li>
+                <li class="mob_menu_item"><a href="delivery.html"><span>Доставка</span></a></li>
+                <li class="mob_menu_item"><a href="pay.html"><span>Оплата</span></a></li>
+                <li class="mob_menu_item"><a href="about.html"><span>О компании</span></a></li>
+                <li class="mob_menu_item"><a href="warranty.html"><span>Гарантия</span></a></li>
+                <li class="mob_menu_item"><a href="qa.html"><span>Вопрос-ответ</span></a></li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarWatches" aria-controls="navbarWatches" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarWatches">
+                    <ul class="navbar-nav">
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Японские часы</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="japWatchesCarousel" class="col-md-2 carousel slide float-left" data-ride="carousel"> 
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/logo_brands/Japanese/Sale/seiko.jpg" alt="Casio">
+                                        <div class="carousel-caption">
+                                            <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/logo_brands/Japanese/Sale/orient.jpg" alt="Orient">
+                                        <div class="carousel-caption">
+                                            <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/logo_brands/Japanese/Sale/casio1_sale.jpg" alt="Seiko1">
+                                        <div class="carousel-caption">
+                                            <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                     </div>
+                                </div>
+                                <a class="slide-btn-prev" href="#japWatchesCarousel" data-slide="prev">
+                                    <img src="./img/prev-slide.png" alt="">
+                                </a>
+                                <a class="slide-btn-next" href="#japWatchesCarousel" data-slide="next">
+                                    <img src="./img/next-slide.png" alt="">
+                                </a>
+                            </div>
+                            
+                            <div id="japWatches" class="col-md-6 float-left">
+                            <div class="row japWatchesRow">
+                            <div class="brand-logo">
+                                <a href="japan_watches.html"><img src="./img/logo_brands/Japanese/seiko.gif" alt="">
+                                <p>SEIKO</p></a>
+                            </div>                
+                            <div class="brand-logo">
+                                <a href="japan_watches.html"><img src="./img/logo_brands/Japanese/orient.png" alt="">
+                                <p>ORIENT</p></a>
+                            </div>  
+                            <div class="brand-logo">
+                                <a href="japan_watches.html"><img src="./img/logo_brands/Japanese/casio.gif" alt="">
+                                <p>CASIO</p></a>
+                            </div>  
+                            <div class="brand-logo">
+                                <a href="japan_watches.html"><img src="./img/logo_brands/Japanese/citizen.png" alt="">
+                                <p>CITIZEN</p></a>
+                            </div>  
+                            <div class="brand-logo">
+                                <a href="japan_watches.html"><img src="./img/logo_brands/Japanese/QQ.png" alt="">
+                                <p>Q&Q</p></a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="watch-list-link">
+                                <a href="japan_watches.html">Каталог японских часов</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Швейцарские часы</a>
+                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                            <div id="swissWatchesCarousel" class="col-sm-2 carousel slide float-left" data-ride="carousel"> 
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/logo_brands/Swiss/Sale/FC_sale.jpg" alt="FC">
+                                        <div class="carousel-caption">
+                                        <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                     </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/logo_brands/Swiss/Sale/Swatch_sale.jpg" alt="Orient">
+                                        <div class="carousel-caption">
+                                        <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/logo_brands/Swiss/Sale/tissot_sale.jpg" alt="Seiko1">
+                                        <div class="carousel-caption">
+                                        <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="slide-btn-prev" href="#swissWatchesCarousel" data-slide="prev">
+                                    <img src="./img/prev-slide.png" alt="">
+                                </a>
+                                <a class="slide-btn-next" href="#swissWatchesCarousel" data-slide="next">
+                                    <img src="./img/next-slide.png" alt="">
+                                </a>
+                            </div>
+                            <div id="japWatches" class="col-sm-6 float-left">
+                            <div class="row japWatchesRow">
+                            <div class="brand-logo-swiss">
+                                <a href="swiss_watches.html"><img src="./img/logo_brands/Swiss/FC.jpg" alt="">
+                                <p>Frederique Constant</p></a>
+                            </div>                
+                            <div class="brand-logo-swiss">
+                                <a href="swiss_watches.html"><img src="./img/logo_brands/Swiss/ML.jpg" alt="">
+                                <p>Maurice Lacroix</p></a>
+                            </div>  
+                            <div class="brand-logo-swiss">
+                                <a href="swiss_watches.html"><img src="./img/logo_brands/Swiss/RW.gif" alt="">
+                                <p>Raymond Weil</p></a>
+                            </div>  
+                            <div class="brand-logo-swiss">
+                                <a href="swiss_watches.html"><img src="./img/logo_brands/Swiss/swatch.gif" alt="">
+                                <p>Swatch</p></a>
+                            </div>  
+                            <div class="brand-logo-swiss">
+                                <a href="swiss_watches.html"><img src="./img/logo_brands/Swiss/tissot.gif" alt="">
+                                <p>Tissot</p></a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="watch-list-link">
+                                <a href="swiss_watches.html">Каталог швейцарских часов</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fashion часы</a>
+                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                             <div id="fashionWatchesCarousel" class="col-sm-2 carousel slide float-left" data-ride="carousel"> 
+                                 <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/logo_brands/Fashion/Sale/DW_sale.jpg" alt="FC">
+                                        <div class="carousel-caption">
+                                            <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                     </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/logo_brands/Fashion/Sale/fossil_sale.jpg" alt="Orient">
+                                        <div class="carousel-caption">
+                                            <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/logo_brands/Fashion/Sale/MK_sale.JPG" alt="Seiko1">
+                                        <div class="carousel-caption">
+                                            <a href="discount.html" class="more-info-menu-btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="slide-btn-prev" href="#fashionWatchesCarousel" data-slide="prev">
+                                    <img src="./img/prev-slide.png" alt="">
+                                </a>
+                                <a class="slide-btn-next" href="#fashionWatchesCarousel" data-slide="next">
+                                    <img src="./img/next-slide.png" alt="">
+                                </a>
+                             </div>
+                            <div id="japWatches" class="col-sm-6 float-left">
+                                <div class="row japWatchesRow">
+                                <div class="brand-logo-swiss">
+                                    <a href="fashion_watches.html"><img src="./img/logo_brands/Fashion/DW.png" alt="">
+                                    <p>Daniel Welington</p></a>
+                                </div>                
+                                <div class="brand-logo-swiss">
+                                    <a href="fashion_watches.html"><img src="./img/logo_brands/Fashion/fossil.png" alt="">
+                                    <p>Fossil</p></a>
+                                </div>  
+                                <div class="brand-logo-swiss">
+                                    <a href="fashion_watches.html"><img src="./img/logo_brands/Fashion/guess.jpg" alt="">
+                                    <p>Guess</p></a>
+                                </div>  
+                                <div class="brand-logo-swiss">
+                                    <a href="fashion_watches.html"><img src="./img/logo_brands/Fashion/MK.png" alt="">
+                                    <p>Michael Kors</p></a>
+                                </div>  
+                                <div class="brand-logo-swiss">
+                                    <a href="fashion_watches.html"><img src="./img/logo_brands/Fashion/Timex.jpg" alt="">
+                                    <p>Timex</p></a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="watch-list-link">
+                                <a href="fashion_watches.html">Каталог fashion часов</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discount.html">Суперцена</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="#">Мужские</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="#">Женские</a>
+                    </li>
+                </div>
+            </nav>
+        <div id="about-name" class="row">
+            <div class="col-md-auto">
+                Суперцена
+            </div>
+        </div>
+        <div id="catalogue" class="row pay-page">
+            <div class="col-md-3">
+                <div id="filter_accordion">
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Цена<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseOne" class="collapse">
+                        <div class="card-body">
+                            От
+                            <input type="text" class="price-filter" name="min_price_filter" size="7">
+                            До
+                            <input type="text" class="price-filter" name="max_price_filter" size="7">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            Наличие<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse">
+                        <div class="card-body">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="in-stock-shop">
+                            <label class="custom-control-label" for="in-stock-shop">В наличии (магазин)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="in-stock-warehouse">
+                            <label class="custom-control-label" for="in-stock-warehouse">В наличии (склад)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="not-in-stock">
+                            <label class="custom-control-label" for="not-in-stock">Нет в наличии</label>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            Бренд<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseThree" class="collapse">
+                        <div class="card-body">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="seiko-filter">
+                                <label class="custom-control-label" for="seiko-filter">Seiko</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="orient-filter">
+                                <label class="custom-control-label" for="orient-filter">Orient</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="casio-filter">
+                                <label class="custom-control-label" for="casio-filter">Casio</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="citizen-filter">
+                                <label class="custom-control-label" for="citizen-filter">Citizen</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="q&q-filter">
+                                <label class="custom-control-label" for="q&q-filter">Q&Q</label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                            Тип<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseFour" class="collapse">
+                        <div class="card-body">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="for-men-filter">
+                                <label class="custom-control-label" for="for-men-filter">Мужские</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="for-women-filter">
+                                <label class="custom-control-label" for="for-women-filter">Женские</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="for-kids-filter">
+                                <label class="custom-control-label" for="for-kids-filter">Детские</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="unisex-filter">
+                                <label class="custom-control-label" for="unisex-filter">Унисекс</label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                            Размер корпуса, мм<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseFive" class="collapse">
+                        <div class="card-body">
+                            От
+                            <input type="text" class="price-filter" name="min_diameter_filter" size="7">
+                            До
+                            <input type="text" class="price-filter" name="max_diameter_filter" size="7">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSix">
+                            Толщина, мм<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseSix" class="collapse">
+                        <div class="card-body">
+                            От
+                            <input type="text" class="price-filter" name="min_weight_filter" size="7">
+                            До
+                            <input type="text" class="price-filter" name="max_weight_filter" size="7">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+                            Вид механизма<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseSeven" class="collapse">
+                        <div class="card-body">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="quartz-filter">
+                                <label class="custom-control-label" for="quartz-filter">Кварцевые</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mech-filter">
+                                <label class="custom-control-label" for="mech-filter">Механические</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mech-auto-filter">
+                                <label class="custom-control-label" for="mech-auto-filter">Механические с автоподзаводом</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="auto-filter">
+                                <label class="custom-control-label" for="auto-filter">Автоматические</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="auto-hand-filter">
+                                <label class="custom-control-label" for="auto-hand-filter">Автоматические с ручным подзаводом</label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+                            Материал корпуса<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseEight" class="collapse">
+                        <div class="card-body">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="steel-filter">
+                                <label class="custom-control-label" for="steel-filter">Нержавеющая сталь</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="steel-gold-filter">
+                                <label class="custom-control-label" for="steel-gold-filter">Нержавеющая сталь с позолотой</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="plastic-filter">
+                                <label class="custom-control-label" for="plastic-filter">Пластик</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="titan-filter">
+                                <label class="custom-control-label" for="titan-filter">Титан</label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+                            Материал браслета<img src="./img/filter_arrows.png" alt="">
+                        </a>
+                        </div>
+                        <div id="collapseNine" class="collapse">
+                        <div class="card-body">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="rubber-filter">
+                                <label class="custom-control-label" for="rubber-filter">Каучук</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="lether-filter">
+                                <label class="custom-control-label" for="lether-filter">Кожа</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="steel-filter">
+                                <label class="custom-control-label" for="steel-filter">Нержавеющая сталь</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="plastic-filter">
+                                <label class="custom-control-label" for="plastic-filter">Пластик</label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="sort-line">
+                    <ul>
+                        <li><a href="#">По наличию<i class="arrow"></i></a></li>
+                        <li><a href="#">По новизне<i class="arrow"></i></a></li>
+                        <li><a href="#">По популярности<i class="arrow"></i></a></li>
+                        <li><a href="#">По алфавиту<i class="arrow"></i></a></li>
+                        <li><a href="#">По цене<i class="arrow"></i></a></li>
+                    </ul>
+                </div>
+                <div class="jap-watches">
+                    <table id="jap-watch-table">
+                        <tr>
+                            <td>
+                            <div class="watch-cell" style="position: absolute">
+                            <a href="#"><img src="./img/logo_brands/Swiss/Watches/tissot_t035_439.png" alt=""></a>
+                            <div class="watch-desc">
+                                <div class="cat-watch-name"><a href="#">Tissot T035-439</a></div>
+                                <div class="in-stock"><img src="./img/green-tick.png" alt="">Есть в наличии</div>   
+                                <div class="cat-watch-price">1200 руб.<span>1320 руб.</span></div>
+                            </div>
+                            <div class="fast-view">
+                                <div class="vert-center"><a href="#" data-toggle="modal" data-target="#show-watch">Быстрый просмотр</a></div>
+                            </div>
+                            <div class="in-cart-btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                            </div>
+                            </td>
+                            <td>
+                                <div class="watch-cell" style="position: absolute">
+                                <a href="#"><img src="./img/logo_brands/Fashion/Watches/dw_dw00100030.png" alt=""></a>
+                                <div class="watch-desc">
+                                    <div class="cat-watch-name"><a href="#">Daniel Welington 00100030</a></div>
+                                    <div class="in-stock"><img src="./img/green-tick.png" alt="">Есть в наличии</div>   
+                                    <div class="cat-watch-price">280 руб.<span>330 руб.</span></div>
+                                </div>
+                                <div class="fast-view">
+                                    <div class="vert-center"><a href="#">Быстрый просмотр</a></div>
+                                </div>
+                                <div class="in-cart-btn">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="watch-cell" style="position: absolute">
+                                <a href="#"><img src="./img/logo_brands/Fashion/Watches/fossil_fs5347.jpeg" alt=""></a>
+                                <div class="watch-desc">
+                                    <div class="cat-watch-name"><a href="#">Fossil FS5347</a></div>
+                                    <div class="in-stock"><img src="./img/green-tick.png" alt="">Есть в наличии</div>   
+                                    <div class="cat-watch-price">290 руб.<span>345 руб.</span></div>
+                                </div>
+                                <div class="fast-view">
+                                    <div class="vert-center"><a href="#">Быстрый просмотр</a></div>
+                                </div>
+                                <div class="in-cart-btn">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="watch-cell" style="position: absolute">
+                                <a href="#"><img src="./img/logo_brands/Japanese/Watches/orient_fac00003w.jpeg" alt=""></a>
+                                <div class="watch-desc">
+                                    <div class="cat-watch-name"><a href="#">Orient FAC00003W</a></div>
+                                    <div class="in-stock"><img src="./img/green-tick.png" alt="">Есть в наличии</div>   
+                                    <div class="cat-watch-price">355 руб.<span>420 руб.</span></div>
+                                </div>
+                                <div class="fast-view">
+                                    <div class="vert-center"><a href="#">Быстрый просмотр</a></div>
+                                </div>
+                                <div class="in-cart-btn">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="show-watch" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Tissot T035-439</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="view-img-block">
+                                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img src="./img/logo_brands/Swiss/Watches/tissot_t035_439(1).png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/logo_brands/Swiss/Watches/Tissot_t097(2).jpeg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/logo_brands/Swiss/Watches/Tissot_t097(3).jpeg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img src="./img/logo_brands/Swiss/Watches/tissot_t035_439(list1).png" class="img-fluid"></li>
+                                        <li data-target="#carousel-thumb" data-slide-to="1"><img src="./img/logo_brands/Swiss/Watches/Tissot_t097(list2).jpeg" class="img-fluid"></li>
+                                        <li data-target="#carousel-thumb" data-slide-to="2"><img src="./img/logo_brands/Swiss/Watches/Tissot_t097(list3).jpeg" class="img-fluid"></li>
+                                    </ol>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-6">
+                            <div class="view-specs-block">
+                            <div id="watch-info-top">
+                                <div class="reference">
+                                    <span class="ref-art">Артикул:</span>
+                                    <span class="ref-num">T035-439</span>
+                                </div>
+                                <div class="in-stock"><img src="./img/green-tick.png" alt="">Есть в наличии</div>
+                            </div>
+                            <div id="watch-specs">
+                                Характеристики
+                                <table class="specs-list">
+                                <tbody>
+                                <tr>
+                                    <td><span class="spec-list-item">Бренд</span></td>
+                                    <td><span class="spec-list-item">Tissot</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Тип</span></td>
+                                    <td><span class="spec-list-item">Мужские</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Размер корпуса, мм</span></td>
+                                    <td><span class="spec-list-item">44</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Толщина, мм</span></td>
+                                    <td><span class="spec-list-item">13</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Вид механизма</span></td>
+                                    <td><span class="spec-list-item">Механические</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Материал корпуса</span></td>
+                                    <td><span class="spec-list-item">Нержавеющая сталь</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Материал браслета</span></td>
+                                    <td><span class="spec-list-item">Нержавеющая сталь</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Стекло</span></td>
+                                    <td><span class="spec-list-item">Сапфировое</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spec-list-item">Производитель</span></td>
+                                    <td><span class="spec-list-item">Швейцария</span></td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 border-left-col">
+                            <div class="view-btns-block">
+                            <div class="cat-watch-price">740 руб.</div>
+                            <div class="in-cart-btn-view">
+                                <a href="#">В корзину</a>
+                            </div>
+                            <div class="buy-click-btn">
+                                <a href="#">Купить в 1 клик</a>
+                            </div>
+                            <div class="add-fav-btn">
+                                <a href="#"><i class="far fa-heart fa-lg"></i>Отслеживать</a>
+                            </div>
+                            <div class="view-text">
+                                Модель бесплатно привезут в магазин для Вашей примерки. Эта услуга к покупке не обязывает.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="show-auth" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Вход в личный кбинет</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 auth-input-block">
+                                <div class="reg-wrap">
+                                    <div class="reg-block">
+                                        <label for="reg-login-input">E-mail<span class="star">*</span></label>
+                                        <input id="reg-login-input" type="text" size="30" required aria-required="true" placeholder="Логин">
+                                    </div>
+                                </div>
+                                <div class="reg-wrap">
+                                    <div class="reg-block">
+                                        <label for="reg-pass-input">Пароль<span class="star">*</span></label>
+                                        <input id="reg-pass-input" type="text" size="30" required aria-required="true" placeholder="Пароль">
+                                    </div>
+                                </div>
+                                <div class="auth-filter-block">
+                                    <div class="auth-mem-check">
+                                        <input type="checkbox" name="auth_mem_check" id="auth_checkbox">
+                                        <label for="auth_checkbox">Запомнить меня</label>
+                                    </div>
+                                    <div class="auth-forgot">
+                                        <a href="#">Забыли пароль?</a>
+                                    </div>
+                                </div>
+                                <div class="reg-button-block">
+                                    <button class="reg-button" type="submit" value="Вход">Войти</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 auth-info-block">
+                                <div class="auth-reg-block">
+                                    <a href="registration.html">Зарегистрироваться</a>
+                                    <div class="reg-text-block">
+                                        После регистрации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row">
+            <div class="col-md-3">
+                <h5>Помощь</h5>
+                <ul>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="pay.html">Условия оплаты</a></li>
+                    <li><a href="delivery.html">Условия доставки</a></li>
+                    <li><a href="warranty.html">Гарантия на товар</a></li>
+                    <li><a href="qa.html">Вопрос-ответ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Мы в соцсетях</h5>
+                <ul id="social-media-list">
+                    <li><a href="#"><img src="./img/vk_icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/facebook_icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/twitter_icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/ok_icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/google_icon.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Способы оплаты</h5>
+                <img src="./img/pay_icons.png" alt="">
+                <div class="info-text">
+                    Наличными при получении или банковской картой.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Контактная информация</h5>
+                <ul class="contact-info">
+                    <li><img src="./img/mts.png" alt="">+375(29) 623-45-67</li>
+                    <li><img src="./img/velcom.png" alt="">+375(33) 623-45-67</li>
+                    <li><img src="./img/life.png" alt="">+375(25) 623-45-67</li>
+                    <li>E-mail: watchshop39@gmail.com</li>
+                    <li>Пн-Вс 10:00 до 20:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="actions.js"></script>
+</body>
+</html>
